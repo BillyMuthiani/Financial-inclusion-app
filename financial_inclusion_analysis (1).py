@@ -8,7 +8,7 @@ import numpy as np
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.preprocessing import LabelEncoder
 from sklearn.metrics import accuracy_score, classification_report
-from ydata_profiling import ProfileReport
+#from ydata_profiling import ProfileReport
 import xgboost as xgb
 import streamlit as st
 import uuid
@@ -25,8 +25,8 @@ print("\nSummary Statistics:")
 print(data.describe(include='all'))
 
 # Generating pandas profiling report
-profile = ProfileReport(data, title="Financial Inclusion Profiling Report", explorative=True)
-profile.to_file("financial_inclusion_report.html")
+#profile = ProfileReport(data, title="Financial Inclusion Profiling Report", explorative=True)
+#profile.to_file("financial_inclusion_report.html")
 
 # Handling missing and corrupted values
 print("\nMissing Values:")
